@@ -1,0 +1,23 @@
+{
+  "name": "ecmascript6-pratices",
+  "version": "1.0.0",
+  "description": "A _arrow function_ é uma função anônima, ou seja: ou \"guardamos\" o que precisa ser feito por essa função dentro de uma variável (const, let ou **var**) OU ela pode ser passada como parâmetro em outra função.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianavns/ec6.git"
+  },
+  "author": "github.com/marianavns",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marianavns/ec6/issues"
+  },
+  "homepage": "https://github.com/marianavns/ec6#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
