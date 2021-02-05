@@ -1,36 +1,30 @@
-// CRIAR OBJETO COM AS FUNÇÕES NATIVAS DO JS
+// CRIANDO OBJETOS COM ARROW FUNCTIONS
 
-const criarObjeto = (nomeInformado, idadeInformada) => (
-    {
-        nome: nomeInformado, 
-        idade: idadeInformada
-    }
-)
+        const criarObjeto = (nome, idade) => (
+            {
+                nome, 
+                idade
+            }
+        )
+        console.log(criarObjeto("Dandara", 27))
+ 
+            // { 
+            //     nome: 'Dandara', 
+            //     idade: 27 
+            // }
 
-console.log(criarObjeto("Dandara", 27))
+            
 
-/* 
-CONSOLE:
-{ 
-    nome: 'Dandara', 
-    idade: 27 
-}
-*/
+// CRIAR OBJETO COM SEU PRÓPRIO CONSTRUTOR - AQUI NÃO PODEMOS USAR ARROW FUNCTIONS
 
+        function participante (nomeInformado, idadeInformada){
+            this.nome = nomeInformado
+            this.idade = idadeInformada
+        }
+        console.log(new participante("Marcela", 30))
 
-// CRIAR OBJETO COM SEU PRÓPRIO CONSTRUTOR
+            // participante { 
+            //     nome: 'Marcela', 
+            //     idade: 30 
+            // }
 
-function participante (nomeInformado, idadeInformada){
-    this.nome = nomeInformado
-    this.idade = idadeInformada
-}
-
-console.log(new participante("Marcela", 30))
-
-/*
-CONSOLE:
-participante { 
-    nome: 'Marcela', 
-    idade: 30 
-}
-*/
